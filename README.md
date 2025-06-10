@@ -1,3 +1,1 @@
-# Weekly-Nerd
- https://codepen.io/silkine/pen/QWBxVX?editors=1100
-
+https://ikreike.github.io/Portfolio-2025_IK/
