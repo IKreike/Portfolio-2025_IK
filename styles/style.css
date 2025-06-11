@@ -190,6 +190,10 @@ a {
     color: grey;
 }
 
+iframe{
+    max-width: 100%;
+}
+
 /* ************************ */
 /* article-specific styling */
 /* ************************ */
