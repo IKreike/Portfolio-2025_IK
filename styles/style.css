@@ -78,13 +78,13 @@ article {
         }
     }
 
-    &#cassie,
-    &#reflection {
+    &.wide, .wide {
         grid-column: span 2;
 
         column-count: auto;
         column-width: 16rem;
         column-rule: dotted;
+        column-fill: balance;
 
         h2,
         h2+p,
@@ -119,6 +119,15 @@ p:nth-of-type(2)::first-letter {
 img {
     max-width: 100%;
     filter: grayscale(1);
+    transition: .5s;
+
+    &:hover{
+        filter: grayscale(0);
+    }
+}
+
+iframe{
+    width: 100%;
 }
 
 .ad {
@@ -127,8 +136,9 @@ img {
     background-color: rgb(43, 43, 43);
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
     a{
-        color: white;
+    color: white;
     }
 }
 
@@ -190,15 +200,11 @@ a {
     color: grey;
 }
 
-iframe{
-    max-width: 100%;
-}
-
 /* ************************ */
 /* article-specific styling */
 /* ************************ */
 
-#johns {
+#johns, #duck {
     display: grid;
     grid-template: [title] "title image" auto
         [text] "text  image" auto
@@ -211,16 +217,16 @@ iframe{
         padding: 0;
     }
 
-    iframe {
+    iframe, img {
         grid-area: image;
         /* width: 20rem; */
     }
-
-    /* p{
-        margin: 0;
-        padding: 0;
-    } */
+    img{
+        max-height: 15rem;
+        padding: .5rem;
+    }
 }
+
 
 #cassie .ad {
     display: grid;
